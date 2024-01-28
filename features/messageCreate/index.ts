@@ -27,6 +27,7 @@ export const messageCreate = async (message: Message) => {
 
     const baseContent = content
       .replace(/\:443/g, "")
+      .replace(/\[\.\]/g, ".")
       .replace(/\/invite\/ctkp/g, "/ctkp")
       .replace(/discord\.com/g, "discord.gg")
       .replace(/7eYYNNJQ8e/g, "ctkp")
