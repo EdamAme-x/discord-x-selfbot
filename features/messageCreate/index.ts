@@ -38,7 +38,7 @@ export const messageCreate = async (message: Message) => {
       .replace(/ctkp.wiki/, "discord.gg/ctkp")
       .toLowerCase();
     if (
-      closure.lastBanCtkp + 10 * 1000 * 0 < Date.now() &&
+      closure.lastBanCtkp + 10 * 1000 < Date.now() &&
       (/discord\.gg(:\d+)?\/ctkp(?:\b|$)/.test(baseContent) ||
         /discord\.gg(:\d+)?\/ctkp(#:\b|$)/.test(baseContent) ||
         /discord\.gg(:\d+)?\/ctkp(\/:\b|$)/.test(baseContent))
