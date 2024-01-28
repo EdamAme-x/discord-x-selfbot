@@ -1,0 +1,21 @@
+{
+	"tasks": {
+		"start": "deno run -A --unstable main.ts",
+		"dev": "deno run -A --unstable main.ts",
+		"lint": "deno run -A --unstable npm:oxlint",
+		"lint:fix": "deno run -A --unstable npm:oxlint --fix",
+		"fmt": "deno fmt"
+	},
+	"imports": {
+		"@/": "./",
+		"self": "npm:discord.js-selfbot-v13"
+	},
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 120,
+		"indentWidth": 4,
+		"semiColons": true,
+		"singleQuote": false,
+		"proseWrap": "preserve"
+	}
+}
